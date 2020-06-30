@@ -4,12 +4,11 @@
 //
 // Execute `rustlings hint clippy1` for hints :)
 
-// I AM NOT DONE
-
 fn main() {
+    let error = 0.001f64;
     let x = 1.2331f64;
     let y = 1.2332f64;
-    if y != x {
+    if (x - y).abs() < error {
         println!("Success!");
     }
 }
